@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 375px) {
+  #wrapper {
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+}

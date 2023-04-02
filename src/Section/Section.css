@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  margin-left: -6.5px;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 380px;
+  margin-left: 25px;
+}
+
+img {
+  width: 60px;
+  height: 40px;
+}
+
+.name {
+  color: #fff;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: -30px;
+}
+
+.desc {
+  color: #ddd;
+  width: 90%;
+  text-align: left;
+  line-height: 23px;
+  min-height: 100px;
+  margin-top: -30px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 13px 35px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  font-size: 17px;
+  margin-left: 25px;
+  background-color: #fff;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#sedan-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+#suv-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+#lux-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+#suv-btn:hover,
+#lux-btn:hover,
+#sedan-btn:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    margin-top: 1px;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}
